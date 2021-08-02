@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fresh_garden/signup.dart';
 
 import 'categiory.dart';
 import 'home.dart';
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
     routes: {
       // '/': (context) => const HomeScreen(),
       '/': (context) => const LogScreen(),
-
+      '/login': (context) => const LoginScreen(),
+      '/signup': (context) => const SignUpScreen(),
       '/second': (context) => const DataScreen(),
     },
   );

@@ -2,8 +2,8 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class SignUpScreen extends StatelessWidget {
+  const SignUpScreen({Key? key}) : super(key: key);
   final bool _isHidden = true;
   @override
   Widget build(BuildContext context) {
@@ -18,9 +18,9 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
              Container(
-              margin: EdgeInsets.only(bottom:80),
+              margin: EdgeInsets.only(bottom:60),
               child: Text(
-                'Welcome Again',
+                'Hello Dude!',
                 style: TextStyle(
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
@@ -28,13 +28,37 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(right: 260, bottom: 50),
+              margin: EdgeInsets.only(right: 230, bottom: 50),
               child: Text(
-                'Login',
+                'Sign up',
                 style: TextStyle(
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
                     color: Colors.black54),
+              ),
+            ),
+            Container(
+              width: 350,
+              margin: EdgeInsets.only(bottom: 15),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Username',
+                  labelStyle: TextStyle(
+                    color: Colors.grey[600],
+                  ),
+                  prefixIcon: Icon(
+                    Icons.person,
+                    color: Colors.grey[600],
+                  ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(6)),
+                    borderSide: BorderSide.none,
+                  ),
+                  hintStyle: TextStyle(
+                      color: Colors.white, fontFamily: "WorkSansLight"),
+                  filled: true,
+                  fillColor: Colors.grey[200],
+                ),
               ),
             ),
             Container(
@@ -99,7 +123,7 @@ class LoginScreen extends StatelessWidget {
                 onPrimary: Colors.white, // foreground
               ),
               onPressed: () {},
-              child: Text('Login',style: TextStyle(fontSize: 18),),
+              child: Text('Sign up',style: TextStyle(fontSize: 18),),
             )
             ),
             Container(
@@ -108,7 +132,7 @@ class LoginScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'no account ? '
+                      'have account ? '
                       ,style: TextStyle(fontSize: 16)
                     ),
                     TextButton(
@@ -116,9 +140,9 @@ class LoginScreen extends StatelessWidget {
                     primary: Colors.green[700],
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/signup');
+                    Navigator.pushNamed(context, '/');
                   },
-                  child: Text('Sign up',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
+                  child: Text('Login',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
                 ),
                   ],
                 ),

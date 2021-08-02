@@ -168,7 +168,9 @@ class LogScreen extends StatelessWidget {
                 style: TextButton.styleFrom(
                   primary: Colors.green[700],
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/login');
+                },
                 child: Text('Sign up',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
               ),
                 ],
