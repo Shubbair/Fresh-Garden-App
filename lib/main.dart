@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'categiory.dart';
 import 'home.dart';
+import 'home_logs.dart';
 import 'logins.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
     initialRoute: '/',
     routes: {
       // '/': (context) => const HomeScreen(),
-      '/': (context) => const LoginScreen(),
+      '/': (context) => const LogScreen(),
 
       '/second': (context) => const DataScreen(),
     },

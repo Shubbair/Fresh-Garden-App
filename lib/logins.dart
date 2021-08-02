@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class LoginsScreen extends StatelessWidget {
+  // const LoginsScreen({Key? key}) : super(key: key);
     bool _isHidden = true;
 
   @override
