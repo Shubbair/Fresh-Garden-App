@@ -1,10 +1,10 @@
+import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginsScreen extends StatelessWidget {
-  // const LoginsScreen({Key? key}) : super(key: key);
-    bool _isHidden = true;
-
+class LogMainScreen extends StatelessWidget {
+  const LogMainScreen({Key? key}) : super(key: key);
+  final bool _isHidden = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

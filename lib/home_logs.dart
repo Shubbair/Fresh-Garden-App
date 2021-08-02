@@ -8,15 +8,13 @@ class LogScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool _isHidden = true;
-
     return Scaffold(
       resizeToAvoidBottomInset: false, // very important to hide keyboard error
       body: Center(
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.only(bottom: 40, top: 60),
+              margin: EdgeInsets.only(bottom: 100, top: 100),
               child: Text(
                 'Fresh and Health Garden',
                 style: TextStyle(
@@ -57,10 +55,10 @@ class LogScreen extends StatelessWidget {
                 ),
               ),
             ),
-             Container(
+            Container(
               width: 280,
               height: 60,
-              margin: EdgeInsets.only(top:10),
+              margin: EdgeInsets.only(top: 10),
               decoration: BoxDecoration(
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.all(Radius.circular(5))),
@@ -93,7 +91,7 @@ class LogScreen extends StatelessWidget {
             Container(
               width: 280,
               height: 60,
-              margin: EdgeInsets.only(top:10),
+              margin: EdgeInsets.only(top: 10),
               decoration: BoxDecoration(
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.all(Radius.circular(5))),
@@ -126,7 +124,7 @@ class LogScreen extends StatelessWidget {
             Container(
               width: 280,
               height: 60,
-              margin: EdgeInsets.only(top:10),
+              margin: EdgeInsets.only(top: 10),
               decoration: BoxDecoration(
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.all(Radius.circular(5))),
@@ -154,6 +152,26 @@ class LogScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 50),
+              child: 
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'no account ? '
+                    ,style: TextStyle(fontSize: 16)
+                  ),
+                  TextButton(
+                style: TextButton.styleFrom(
+                  primary: Colors.green[700],
+                ),
+                onPressed: () {},
+                child: Text('Sign up',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
+              ),
+                ],
               ),
             ),
           ],
