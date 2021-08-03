@@ -98,7 +98,9 @@ class LoginScreen extends StatelessWidget {
                 primary: Colors.greenAccent[700], // background
                 onPrimary: Colors.white, // foreground
               ),
-              onPressed: () {},
+              onPressed: () {
+                  Navigator.pushNamed(context, '/items');
+              },
               child: Text('Login',style: TextStyle(fontSize: 18),),
             )
             ),

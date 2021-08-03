@@ -21,11 +21,11 @@ class MyApp extends StatelessWidget {
     // on the FirstScreen widget.
     initialRoute: '/',
     routes: {
-      // '/': (context) => const HomeScreen(),
-      '/': (context) => const LogScreen(),
+      '/': (context) => const HomeScreen(),
+      '/logs': (context) => const LogScreen(),
       '/login': (context) => const LoginScreen(),
       '/signup': (context) => const SignUpScreen(),
-      '/second': (context) => const DataScreen(),
+      '/items': (context) => const DataScreen(),
     },
   );
   }

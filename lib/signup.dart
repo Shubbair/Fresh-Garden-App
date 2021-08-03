@@ -140,7 +140,7 @@ class SignUpScreen extends StatelessWidget {
                     primary: Colors.green[700],
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/');
+                    Navigator.pushNamed(context, '/login');
                   },
                   child: Text('Login',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
                 ),

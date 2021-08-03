@@ -6,54 +6,54 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text('Second Screen'),
-      // ),
-      //SizedBox(child: Image(image: new AssetImage('images/home.png'),),width:280,)
       body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Divider(
-            height: 150,
-          ),
-          Text(
-            'Your Fresh Garden',
-            style: TextStyle(
-              fontSize: 36,
-              fontWeight: FontWeight.bold,
+          Container(
+            margin: EdgeInsets.only(top:110,bottom:50),
+            child: Column(
+              children: [
+                Text(
+              'Your Fresh Garden',
+              style: TextStyle(
+                fontSize: 36,
+                fontWeight: FontWeight.bold,
+                color: Colors.greenAccent[700]
+              ),
+            ),
+             Container(
+               margin: EdgeInsets.only(top:6),
+               child: Text('Buy your favorite Fruits and Vegitbles',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.black54
+                )),
+             ),
+              ],
             ),
           ),
-          Divider(),
-          Text('Buy your favorite Fruits and Vegitbles',
-              style: TextStyle(
-                fontSize: 18,
-              )),
-          Divider(
-            height: 100,
-          ),
-          SizedBox(
+          Container(
             child: Image(
               image: new AssetImage('images/home.png'),
             ),
             width: 280,
           ),
-          Divider(height: 160,),
-          ButtonTheme(
-            minWidth: 280.0,
-            height: 60.0,
-            child: RaisedButton(
-                               shape: new RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(30.0),
-                  ),
+          Container(
+              width: 300,
+              height: 50,
+              margin: EdgeInsets.only(top: 30),
+                child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.greenAccent[700], // background
+                onPrimary: Colors.white, // foreground
+              ),
               onPressed: () {
-                  Navigator.pushNamed(context, '/second');
+                  Navigator.pushNamed(context, '/login');
               },
-              color: Colors.green.shade600,
-              textColor: Colors.white,
-              child: Text("Get Started",style: TextStyle(fontSize: 18),),
+              child: Text('Get Started',style: TextStyle(fontSize: 18),),
+            )
             ),
-          ),
         ],
       )),
     );

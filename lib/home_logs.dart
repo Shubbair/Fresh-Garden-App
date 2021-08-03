@@ -132,7 +132,9 @@ class LogScreen extends StatelessWidget {
                 style: TextButton.styleFrom(
                   primary: Colors.black12, // foreground
                 ),
-                onPressed: () {},
+                onPressed: () {
+                    Navigator.pushNamed(context, '/login');
+                },
                 child: Row(
                   children: [
                     Container(
