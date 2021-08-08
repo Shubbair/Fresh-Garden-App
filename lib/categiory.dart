@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fresh_garden/fruits.dart';
 import 'package:fresh_garden/items.dart';
 
-Fruit f = new Fruit(name: 'bannana',price: '5.4',path: 'images/bannana');
+Fruit f = new Fruit(name: 'bannana',price: '5.20 USD',path: 'images/bannana.png',weight: '1kg',margin: 16.0);
 
 class DataScreen extends StatelessWidget {
   const DataScreen({Key? key}) : super(key: key);
