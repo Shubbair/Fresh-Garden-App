@@ -8,7 +8,7 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: this.fruit.margin),
+      margin: EdgeInsets.only(left: this.fruit.margin, top: this.fruit.margin_top),
       width: 165,
       height: 180,
       decoration: BoxDecoration(

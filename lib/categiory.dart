@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:fresh_garden/fruits.dart';
 import 'package:fresh_garden/items.dart';
 
-Fruit f = new Fruit(name: 'bannana',price: '5.20 USD',path: 'images/bannana.png',weight: '1kg',margin: 16.0);
-
 class DataScreen extends StatelessWidget {
   const DataScreen({Key? key}) : super(key: key);
 
@@ -122,98 +120,17 @@ class DataScreen extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: 165,
-                height: 180,
-                decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    borderRadius: BorderRadius.all(Radius.circular(8))),
-                child: Center(
-                    child: Column(
-                  children: [
-                    Container(
-                        margin: EdgeInsets.only(top: 10, bottom: 10),
-                        child: Text(
-                          'Red Apple',
-                          style: TextStyle(fontSize: 20),
-                        )),
-                    Image.asset('images/apple.png'),
-                    Container(
-                      child: Text('1 KG'),
-                      margin: EdgeInsets.only(bottom: 4),
-                    ),
-                    Container(
-                      // margin: EdgeInsets.only(top:71),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            margin: EdgeInsets.only(left: 10),
-                            child: Text('5.40 USD'),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 48),
-                            decoration: BoxDecoration(
-                                color: Colors.green[300],
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(8))),
-                            child: IconButton(
-                                onPressed: () {}, icon: Icon(Icons.add)),
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
-                )),
-              ),
-              Container(
-                margin: EdgeInsets.only(left: 16),
-                width: 165,
-                height: 180,
-                decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    borderRadius: BorderRadius.all(Radius.circular(8))),
-                child: Center(
-                    child: Column(
-                  children: [
-                    Container(
-                        margin: EdgeInsets.only(top: 10, bottom: 10),
-                        child: Text(
-                          'Good Bannana',
-                          style: TextStyle(fontSize: 20),
-                        )),
-                    Image.asset('images/bannana.png',width: 100,),
-                    Container(
-                      child: Text('1 KG'),
-                      margin: EdgeInsets.only(bottom: 4),
-                    ),
-                    Container(
-                      // margin: EdgeInsets.only(top:71),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            margin: EdgeInsets.only(left: 10),
-                            child: Text('5.40 USD'),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 48),
-                            decoration: BoxDecoration(
-                                color: Colors.green[300],
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(8))),
-                            child: IconButton(
-                                onPressed: () {}, icon: Icon(Icons.add)),
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
-                )),
-              ),
+              new SecondPage(fruit: new Fruit(name: 'bannana',price: '5.20 USD',path: 'images/bannana.png',weight: '1kg',margin: 0.0,margin_top:0.0)),
+              new SecondPage(fruit: new Fruit(name: 'bannana',price: '5.20 USD',path: 'images/bannana.png',weight: '1kg',margin: 18.0,margin_top:0.0)),            
             ],
           ),
-          new SecondPage(fruit: f),
+         Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              new SecondPage(fruit: new Fruit(name: 'bannana',price: '5.20 USD',path: 'images/bannana.png',weight: '1kg',margin: 0.0,margin_top:14.0)),
+              new SecondPage(fruit: new Fruit(name: 'bannana',price: '5.20 USD',path: 'images/bannana.png',weight: '1kg',margin: 18.0,margin_top:14.0)),            
+            ],
+          ),
         ],
       ),
     );
