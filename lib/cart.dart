@@ -25,10 +25,10 @@ class CartScreen extends StatelessWidget {
               child: 
               Row(
                 children: [
-                  Image.asset('images/bannana.png'),
-                  Text('images/bannana.png'),
-                  Icon(Icons.payment),
-                  Icon(Icons.remove_circle)
+                  Container(width: 80,height: 80, child: Image.asset('images/bannana.png'),margin: EdgeInsets.only(left:20),),
+                  Container(child: Text('images/bannana.png'),margin: EdgeInsets.only(left:10),),
+                  Container(child: Icon(Icons.payment),margin: EdgeInsets.only(left:20),),
+                  Container(child: Icon(Icons.remove_circle),margin: EdgeInsets.only(left:20),)
                 ],
               ),
              decoration: BoxDecoration(
