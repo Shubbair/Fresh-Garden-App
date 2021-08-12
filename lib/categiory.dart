@@ -50,7 +50,9 @@ class DataScreen extends StatelessWidget {
                         Icons.shopping_cart,
                         size: 28.0,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                            Navigator.pushNamed(context, '/cart');
+                      },
                       color: Colors.black87),
                   // if (_cartList.length > 0)
                   Padding(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fresh_garden/signup.dart';
 
+import 'cart.dart';
 import 'categiory.dart';
 import 'home.dart';
 import 'home_logs.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       '/login': (context) => const LoginScreen(),
       '/signup': (context) => const SignUpScreen(),
       '/items': (context) => const DataScreen(),
+      '/cart': (context) => const CartScreen(),
     },
   );
   }
