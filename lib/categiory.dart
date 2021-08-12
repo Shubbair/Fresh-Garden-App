@@ -21,7 +21,7 @@ class DataScreen extends StatelessWidget {
               accountEmail: Text("example@example.com"),  
               currentAccountPicture: CircleAvatar(  
                 backgroundColor: Colors.orange,  
-                child: Icon(Icons.person),
+                child: Icon(Icons.person,size: 50,),
               ),  
           
             ),  
