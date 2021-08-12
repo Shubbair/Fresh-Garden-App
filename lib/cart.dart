@@ -37,6 +37,42 @@ class CartScreen extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(8))
             ),
               ),
+              Container(
+                margin: EdgeInsets.only(top: 10),
+                width: 350,
+                height: 70,
+                child: 
+                Row(
+                  children: [
+                    Container(width: 80,height: 80, child: Image.asset('images/bannana.png'),margin: EdgeInsets.only(left:20),),
+                    Container(child: Text('images/bannana.png'),margin: EdgeInsets.only(left:10),),
+                    Container(child:IconButton(onPressed: (){}, icon: Icon(Icons.payment)),margin: EdgeInsets.only(left:5),),
+                    Container(child: IconButton(onPressed: (){}, icon: Icon(Icons.remove_circle)),margin: EdgeInsets.only(left:5),)
+                  ],
+                ),
+               decoration: BoxDecoration(
+            color: Colors.grey[200],
+            borderRadius: BorderRadius.all(Radius.circular(8))
+            ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 10),
+                width: 350,
+                height: 70,
+                child: 
+                Row(
+                  children: [
+                    Container(width: 80,height: 80, child: Image.asset('images/orange.png'),margin: EdgeInsets.only(left:20),),
+                    Container(child: Text('images/bannana.png'),margin: EdgeInsets.only(left:10),),
+                    Container(child:IconButton(onPressed: (){}, icon: Icon(Icons.payment)),margin: EdgeInsets.only(left:5),),
+                    Container(child: IconButton(onPressed: (){}, icon: Icon(Icons.remove_circle)),margin: EdgeInsets.only(left:5),)
+                  ],
+                ),
+               decoration: BoxDecoration(
+            color: Colors.grey[200],
+            borderRadius: BorderRadius.all(Radius.circular(8))
+            ),
+              ),
             ],
           ),
         ),
