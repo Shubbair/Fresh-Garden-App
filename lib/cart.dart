@@ -46,8 +46,8 @@ class CartScreen extends StatelessWidget {
                   children: [
                     Container(width: 80,height: 80, child: Image.asset('images/bannana.png'),margin: EdgeInsets.only(left:20),),
                     Container(child: Text('images/bannana.png'),margin: EdgeInsets.only(left:10),),
-                    Container(child:IconButton(onPressed: (){}, icon: Icon(Icons.payment)),margin: EdgeInsets.only(left:5),),
-                    Container(child: IconButton(onPressed: (){}, icon: Icon(Icons.remove_circle)),margin: EdgeInsets.only(left:5),)
+                    Container(child:IconButton(onPressed: (){}, icon: Icon(Icons.payment , color: Colors.green,)),margin: EdgeInsets.only(left:5),),
+                    Container(child: IconButton(onPressed: (){}, icon: Icon(Icons.remove_circle , color: Colors.red,)),margin: EdgeInsets.only(left:5),)
                   ],
                 ),
                decoration: BoxDecoration(
