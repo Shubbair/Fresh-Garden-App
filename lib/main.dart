@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
       '/signup': (context) => const SignUpScreen(),
       '/items': (context) => const DataScreen(),
       '/cart': (context) => const CartScreen(),
+      // '/cart': (context) => const CartScreen(),
     },
   );
   }
